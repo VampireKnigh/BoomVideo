@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>boomVideo</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	.video{
+		width: 1px;
+		height: 1px;
+		position: absolute;
+	}
+	.video video{
+		width: 0px;
+		height: 0px;
+
+	}
+	#videoCopy{
+		display: none;
+	}
+	.tip{
+		text-align:center;
+		margin:5% 0 0 0;
+		font-size: 18px;
+		font-weight: 600;
+		color: #666;
+		position:absolute;
+		top:0;
+		width:100%;
+	}
+	.stage{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="video">
+		<video  id="sourceVideo" autoplay="true"loop="true" volume="0"	controls="controls" webkit-playsinline>
+			<source src="http://www.tofei.cc/comments/4_BlowVido/video/BigBuckBunny_640x360.mp4">
+			<source src="http://www.tofei.cc/comments/4_BlowVido/video/BigBuckBunny_640x360.ogv">
+		</video>
+		<canvas id="videoCopy"></canvas>
+	</div>
+	<div class="stage">
+		<div class="tip">
+			<p>点击视频进行爆屏试验</p>
+		</div>	
+		<canvas id="videoShow"></canvas>
+	</div>
+	<script type="text/javascript" src="boomVideo.js"></script>
+</body>
+</html>
