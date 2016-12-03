@@ -11,10 +11,10 @@ A video can burst into many min-square when you click it
   restore 返回之前保存过的路径状态和属性（方法从栈中弹出存储的图形状态并恢复 CanvasRenderingContext2D 对象的属性、剪切路径和变换矩阵的值。），这样画的属性不会因为save之后执行的平移或者旋转影响下一帧的绘画。
   save和restore要配对使用（restore可以比save少，但不能多），如果restore调用次数比save多，会引发Error。
   
-3.设置300个Tile小方块和位置参数
+ 3.设置300个Tile小方块和位置参数
  
-4.dropBomb方法为点击事件的触发，explode方法修改Tile的各项参数，从而改变方块的轨迹
+ 4.dropBomb方法为点击事件的触发，explode方法修改Tile的各项参数，从而改变方块的轨迹
  
-5.force参数为鼠标点击周围每个图片获得的力量值，从而决定每个Tile飞得多远，并在每一帧刷新减弱force，直到force值小于0.0001才让图片飞回来，在force值偏小的时候，还显示在原地暂停的假象，其实是图片在原地以几毫米缓慢移动。
+ 5.force参数为鼠标点击周围每个图片获得的力量值，从而决定每个Tile飞得多远，并在每一帧刷新减弱force，直到force值小于0.0001才让图片飞回来，在force值偏小的时候，还显示在原地暂停的假象，其实是图片在原地以几毫米缓慢移动。
  
  
